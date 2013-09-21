@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>installer_item_hash</key>
+	<string>39f76417c4a1f04e808fee41c57b9c19179ec5330ad2163ee81f13e9da1f3afd</string>
+	<key>installer_item_location</key>
+	<string>apps/Firefox configs.dmg</string>
+	<key>installer_item_size</key>
+	<integer>16</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>md5checksum</key>
+			<string>d623aa683b8a63101736244c1a293641</string>
+			<key>path</key>
+			<string>/Applications/Firefox.app/Contents/MacOS/firefox_AA.cfg</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+		<dict>
+			<key>md5checksum</key>
+			<string>6d2c23247fa641ef953e8be12573651d</string>
+			<key>path</key>
+			<string>/Applications/Firefox.app/Contents/MacOS/defaults/pref/local-settings.js</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications/Firefox.app/Contents/MacOS</string>
+			<key>group</key>
+			<string>admin</string>
+			<key>mode</key>
+			<string>644</string>
+			<key>source_item</key>
+			<string>firefox_AA.cfg</string>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications/Firefox.app/Contents/MacOS/defaults/pref</string>
+			<key>group</key>
+			<string>admin</string>
+			<key>mode</key>
+			<string>644</string>
+			<key>source_item</key>
+			<string>local-settings.js</string>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.6.8</string>
+	<key>name</key>
+	<string>Firefox Configuration</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>unattended_install</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>update_for</key>
+	<array>
+		<string>Firefox</string>
+	</array>
+</dict>
+</plist>

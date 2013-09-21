@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Java 7 Update 21</string>
+	<key>installed_size</key>
+	<integer>146800</integer>
+	<key>installer_item_hash</key>
+	<string>57542be9b967cf1deedde4f38ef40b93f0d679d5dde6f7b2e4ec49e5be649a5c</string>
+	<key>installer_item_location</key>
+	<string>oracle/jre-7u21-macosx-x64.dmg</string>
+	<key>installer_item_size</key>
+	<integer>51659</integer>
+	<key>minimum_os_version</key>
+	<string>10.7.3</string>
+	<key>name</key>
+	<string>Java 7 Update</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>146800</integer>
+			<key>packageid</key>
+			<string>com.oracle.jre</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>update_for</key>
+	<array>
+		<string>JavaForOSX</string>
+	</array>
+	<key>version</key>
+	<string>1.7.0.21</string>
+	<key>installcheck_script</key>
+	<string>#!/bin/bash
+
+if [ ! -e /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin ] ; then
+	exit 0
+fi
+
+VERSION=`defaults read /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Info CFBundleVersion | cut -d. -f1`
+VERSION2=`defaults read /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Info CFBundleVersion | cut -d. -f1,2`
+VERSION3=`defaults read /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Info CFBundleVersion | cut -d. -f3`
+
+if [ $VERSION -ge 14 ] ; then
+	exit 0
+fi
+
+RESULT=`echo "$VERSION2 &lt; 1.7" | bc`
+if [ $RESULT -eq 1 ] ; then
+	exit 0
+fi
+
+RESULT=`echo "$VERSION2 == 1.7" | bc`
+if [ $RESULT -eq 1 ] ; then
+	echo "version 1.7"
+	if [ $VERSION3 -lt 21 ]; then
+		exit 0
+	fi
+fi
+exit 1
+</string>
+	<key>postinstall_script</key> 
+	<string>#!/bin/sh 
+JAVADIR=/Library/Application\ Support/Oracle/Java/Deployment 
+if [ ! -d "$JAVADIR" ]; then 
+        /bin/mkdir -p "$JAVADIR" 
+fi 
+
+/bin/echo "deployment.macosx.check.update=false" > "$JAVADIR/deployment.properties"
+</string>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>deprecated</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Java for OS X 2013-003</string>
+	<key>installed_size</key>
+	<integer>75758</integer>
+	<key>installer_item_hash</key>
+	<string>193daf9d16ba753cb7b9160e3b3842e515575a07ac2ec06d27c21a40c30c917b</string>
+	<key>installer_item_location</key>
+	<string>apple/JavaForOSX2013-003.dmg</string>
+	<key>installer_item_size</key>
+	<integer>65450</integer>
+	<key>minimum_os_version</key>
+	<string>10.7.0</string>
+	<key>name</key>
+	<string>JavaForOSX</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleShortVersionString</key>
+			<string>14.7.0</string>
+			<key>path</key>
+			<string>/System/Library/Frameworks/JavaVM.framework</string>
+			<key>type</key>
+			<string>bundle</string>
+		</dict>
+		<dict>
+			<key>CFBundleShortVersionString</key>
+			<string>14.7.0</string>
+			<key>path</key>
+			<string>/System/Library/Java/JavaVirtualMachines/1.6.0.jdk</string>
+			<key>type</key>
+			<string>bundle</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0.0.0.1.1247562015</string>
+	<key>unattended_install</key>
+	<true/>
+</dict>
+</plist>

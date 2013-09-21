@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Useful remote access and screen sharing app.</string>
+	<key>display_name</key>
+	<string>Join me</string>
+	<key>installer_item_hash</key>
+	<string>6f10efc43783fd6c3aa5cc8f26bd720f9daa872ba1f7ccb7429b3378e89d0fa5</string>
+	<key>installer_item_location</key>
+	<string>utils/join.me-1.9.2.204.dmg</string>
+	<key>installer_item_size</key>
+	<integer>4836</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.logmein.join.me</string>
+			<key>CFBundleName</key>
+			<string>join.me</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.9.2.204</string>
+			<key>CFBundleVersion</key>
+			<string>1.9.2.204</string>
+			<key>minosversion</key>
+			<string>10.6.8</string>
+			<key>path</key>
+			<string>/Applications/join.me.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>join.me.app</string>
+			<key>group</key>
+			<string>staff</string>
+			<key>mode</key>
+			<string>0777</string>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.6.8</string>
+	<key>name</key>
+	<string>join.me</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.9.2.204</string>
+</dict>
+</plist>

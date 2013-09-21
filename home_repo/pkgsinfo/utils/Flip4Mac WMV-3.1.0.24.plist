@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Flip4Mac WMV QuickTime components, plug-ins, and preference pane.</string>
+	<key>display_name</key>
+	<string>Flip4Mac WMV</string>
+	<key>installed_size</key>
+	<integer>75533</integer>
+	<key>installer_item_hash</key>
+	<string>77c9797c5217176c1c3073923a4ce75c8c4d2b23140b1bb2fcaca9adac631d8c</string>
+	<key>installer_item_location</key>
+	<string>utils/Flip4Mac.pkg</string>
+	<key>installer_item_size</key>
+	<integer>49490</integer>
+	<key>minimum_os_version</key>
+	<string>10.7.0</string>
+	<key>name</key>
+	<string>Flip4Mac WMV</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleShortVersionString</key>
+			<string>3.1.0.24</string>
+			<key>path</key>
+			<string>/Library/Internet Plug-Ins/Flip4Mac WMV Plugin.plugin</string>
+			<key>type</key>
+			<string>bundle</string>
+		</dict>
+		<dict>
+			<key>CFBundleShortVersionString</key>
+			<string>3.1.0.24</string>
+			<key>path</key>
+			<string>/Applications/Flip Player.app</string>
+			<key>type</key>
+			<string>bundle</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.1.0.24</string>
+	<key>unattended_install</key>
+	<true/>
+</dict>
+</plist>

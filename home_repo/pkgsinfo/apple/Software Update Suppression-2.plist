@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>applesoftwareupdatesuppression</string>
+	<key>installer_item_hash</key>
+	<string>bae39ee99dad4fb0fcef66fa973107aec54808375084c7a48ff5b239621b64e8</string>
+	<key>installer_item_location</key>
+	<string>apple/Software Update Suppression.dmg</string>
+	<key>installer_item_size</key>
+	<integer>16</integer>
+	<key>minimum_os_version</key>
+	<string>10.6.0</string>
+	<key>name</key>
+	<string>Software Update Suppression</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Software Update Suppression.pkg</string>
+			<key>installed_size</key>
+			<integer>0</integer>
+			<key>packageid</key>
+			<string>com.trmacs.applesoftwaresuppression.pkg</string>
+			<key>version</key>
+			<string>1</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2</string>
+</dict>
+</plist>

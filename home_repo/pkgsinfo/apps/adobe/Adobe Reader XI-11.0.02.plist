@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Adobe Reader XI (11.0.02) </string>
+	<key>installed_size</key>
+	<integer>414871</integer>
+	<key>installer_item_hash</key>
+	<string>b6b904957baabe2c6839dc350b76e60a1218b44cfb5c194d45b60deb9d29237d</string>
+	<key>installer_item_location</key>
+	<string>apps/adobe/AdbeRdr11002_en_US.dmg</string>
+	<key>installer_item_size</key>
+	<integer>78478</integer>
+	<key>minimum_os_version</key>
+	<string>10.7.5</string>
+	<key>name</key>
+	<string>Adobe Reader XI</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>8228</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.11002.reader.appsupport.pkg.en_US</string>
+			<key>version</key>
+			<string>11.0.02</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1076</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.11002.reader.browser.pkg.en_US</string>
+			<key>version</key>
+			<string>11.0.02</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>405567</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.11002.reader.app.pkg.en_US</string>
+			<key>version</key>
+			<string>11.0.02</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>unattended_install</key>
+	<true/>
+	<key>version</key>
+	<string>11.0.02</string>
+   <key>preinstall_script</key>
+        <string>#!/bin/sh
+if [ -e "/Applications/Adobe Reader.app" ]; then
+        rm -r "/Applications/Adobe Reader.app"
+fi
+exit 0
+        </string>	<key>postinstall_script</key>
+	<string>#!/bin/sh
+/usr/libexec/PlistBuddy -c  "Add :10 dict" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :10:AvGeneral dict" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :10:AvGeneral:CheckForUpdatesAtStartup array" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :10:AvGeneral:CheckForUpdatesAtStartup:false bool" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :10:AvGeneral:CheckForUpdatesAtStartup:0 integer" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :10:EULAAccepted bool" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Set :10:EULAAccepted true" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :10:ShowSplashScreen bool" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11 dict" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11:AvGeneral dict" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11:AvGeneral:CheckForUpdatesModeAtStartup array" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11:AvGeneral:CheckForUpdatesModeAtStartup: integer 1" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11:AvGeneral:CheckForUpdatesModeAtStartup: integer 0" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11:EULAAccepted bool" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Set :11:EULAAccepted true" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11:ShowSplashScreen bool" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11:FeatureLockdown dict" /Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c  "Add :11:FeatureLockdown:bUpdater bool" /Library/Preferences/com.adobe.Reader.plist
+exit 0
+	</string>	
+</dict>
+</plist>

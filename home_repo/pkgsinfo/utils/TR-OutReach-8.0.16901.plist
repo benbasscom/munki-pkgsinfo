@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>display_name</key>
+	<string>TR-OutReach</string>
+	<key>installer_item_hash</key>
+	<string>416e4dac92f46445b41e49425194d49143d9ace5294929d4f72807fa646c2822</string>
+	<key>installer_item_location</key>
+	<string>utils/TR-OutReach.dmg</string>
+	<key>installer_item_size</key>
+	<integer>12118</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.teamviewer.TeamViewerQS</string>
+			<key>CFBundleName</key>
+			<string>TeamViewerQS</string>
+			<key>CFBundleShortVersionString</key>
+			<string>8.0.16901</string>
+			<key>minosversion</key>
+			<string>10.5</string>
+			<key>path</key>
+			<string>/Applications/TR OutReach.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>TR OutReach.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.5</string>
+	<key>name</key>
+	<string>TR-OutReach</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>8.0.16901</string>
+	<key>unattended_install</key>
+	<true/>
+</dict>
+</plist>

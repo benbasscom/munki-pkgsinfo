@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>autoremove</key>
+    <false/>
+    <key>catalogs</key>
+    <array>
+        <string>production</string>
+    </array>
+    <key>display_name</key>
+    <string>RFE Software Update Settings</string>
+    <key>installer_type</key>
+    <string>nopkg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>path</key>
+			<string>/usr/local/munki/.rfeSUS1</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+	<key>preinstall_script</key>
+	<string>#!/bin/sh
+#checkes the OS of the machine, then sets munki to check for OS updates, and sets the catalog url for munki, as well as for the Apple SUS incase OS update checking is active or done manually.
+
+#OS checking  - each os returns as a three digit number 10.6.8 = 106, 10.7.0 = 107, etc…
+os_chck="$(system_profiler SPSoftwareDataType | grep "System Version:" | cut -d : -f2 | sed 's/ //')"
+os_vers_chck="$(echo "$os_chck" | sed 's/[MacOSXerv .]//g' | cut -f1 -d\( | cut -c 1-3)"
+
+if [[ "$os_vers_chck" == 106 ]]; then
+
+defaults write /Library/Preferences/ManagedInstalls InstallAppleSoftwareUpdates -bool true
+defaults write /Library/Preferences/ManagedInstalls SoftwareUpdateServerURL http://server.rfeip.com:81/reposado/html/content/catalogs/others/index-leopard-snowleopard.merged-1_RFE.sucatalog
+defaults write /Library/Preferences/com.apple.SoftwareUpdate CatalogURL http://server.rfeip.com:81/reposado/html/content/catalogs/others/index-leopard-snowleopard.merged-1_RFE.sucatalog
+exit 0
+fi
+
+if [[ "$os_vers_chck" == 107 ]]; then
+
+defaults write /Library/Preferences/ManagedInstalls InstallAppleSoftwareUpdates -bool true
+defaults write /Library/Preferences/ManagedInstalls SoftwareUpdateServerURL http://server.rfeip.com:81/reposado/html/content/catalogs/others/index-lion-snowleopard-leopard.merged-1_RFE.sucatalog
+defaults write /Library/Preferences/com.apple.SoftwareUpdate CatalogURL http://server.rfeip.com:81/reposado/html/content/catalogs/others/index-lion-snowleopard-leopard.merged-1_RFE.sucatalog
+exit 0
+fi
+
+if [[ "$os_vers_chck" == 108 ]]; then
+
+defaults write /Library/Preferences/ManagedInstalls InstallAppleSoftwareUpdates -bool true
+defaults write /Library/Preferences/ManagedInstalls SoftwareUpdateServerURL http://server.rfeip.com:81/reposado/html/content/catalogs/others/index-mountainlion-lion-snowleopard-leopard.merged-1_RFE.sucatalog
+defaults write /Library/Preferences/com.apple.SoftwareUpdate CatalogURL http://server.rfeip.com:81/reposado/html/content/catalogs/others/index-mountainlion-lion-snowleopard-leopard.merged-1_RFE.sucatalog
+exit 0
+fi
+
+</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+touch /usr/local/munki/.rfeSUS1
+exit 0
+</string>
+    <key>minimum_os_version</key>
+    <string>10.6.0</string>
+    <key>name</key>
+    <string>RFE SUS</string>
+    <key>uninstallable</key> 
+    <false/> 
+    <key>version</key>
+    <string>1.0</string>
+    <key>unattended_install</key>
+    <true/>
+</dict>
+</plist>

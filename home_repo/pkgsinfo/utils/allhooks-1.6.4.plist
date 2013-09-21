@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Contains keychain removal, user tracking and apple software update suppression as login and logout hooks.</string>
+	<key>display_name</key>
+	<string>allhooks</string>
+	<key>installed_size</key>
+	<integer>4</integer>
+	<key>installer_item_hash</key>
+	<string>3181ba5cb89541425df2054f39048f888ae36c680e21ca2e82980ad852baee96</string>
+	<key>installer_item_location</key>
+	<string>utils/allhooks-1.6.4.dmg</string>
+	<key>installer_item_size</key>
+	<integer>21</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>allhooks</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>4</integer>
+			<key>packageid</key>
+			<string>com.trmacs.pkg.allhooks</string>
+			<key>version</key>
+			<string>1.6.4</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.6.4</string>
+</dict>
+</plist>

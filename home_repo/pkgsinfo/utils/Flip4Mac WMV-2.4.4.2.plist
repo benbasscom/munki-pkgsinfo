@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Flip4Mac WMV QuickTime components, plug-ins, and preference pane.</string>
+	<key>display_name</key>
+	<string>Flip4Mac WMV</string>
+	<key>installed_size</key>
+	<integer>25240</integer>
+	<key>installer_item_hash</key>
+	<string>6a91b2ecb49eeb97de7b9a55626db4c9defe158644027b4bb198efaf77decefb</string>
+	<key>installer_item_location</key>
+	<string>utils/Flip4Mac WMV.dmg</string>
+	<key>installer_item_size</key>
+	<integer>11404</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Flip4Mac WMV</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Flip4Mac QuickTime Components.pkg</string>
+			<key>installed_size</key>
+			<integer>24552</integer>
+			<key>name</key>
+			<string>QuickTime Components</string>
+			<key>packageid</key>
+			<string>net.telestream.wmv.components</string>
+			<key>version</key>
+			<string>2.4.4.2</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Flip4Mac Web Plugins.pkg</string>
+			<key>installed_size</key>
+			<integer>688</integer>
+			<key>name</key>
+			<string>Web Browser Support</string>
+			<key>packageid</key>
+			<string>net.telestream.wmv.plugins</string>
+			<key>version</key>
+			<string>2.4.4.2</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.4.4.2</string>
+</dict>
+</plist>

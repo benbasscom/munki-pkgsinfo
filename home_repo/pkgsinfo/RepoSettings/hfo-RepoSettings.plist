@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>autoremove</key>
+    <false/>
+    <key>catalogs</key>
+    <array>
+        <string>production</string>
+    </array>
+    <key>display_name</key>
+    <string>HFO Munki Repo Settings</string>
+    <key>installer_type</key>
+    <string>nopkg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>path</key>
+			<string>/usr/local/munki/.hfo3</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+	<key>preinstall_script</key>
+	<string>#!/bin/sh
+defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL "http://munki.howardfo.com:9000"
+exit 0
+	</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+touch /usr/local/munki/.hfo3
+exit 0
+</string>
+    <key>minimum_os_version</key>
+    <string>10.4.0</string>
+    <key>name</key>
+    <string>hfo-RepoSettings</string>
+    <key>uninstallable</key> 
+    <false/> 
+    <key>version</key>
+    <string>1.1</string>
+    <key>unattended_install</key>
+    <true/>
+</dict>
+</plist>

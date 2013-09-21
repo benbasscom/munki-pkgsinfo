@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Adobe Acrobat XI Pro</string>
+	<key>installed_size</key>
+	<integer>1483468</integer>
+	<key>installer_item_hash</key>
+	<string>731f240892a24f44c5ae1a2014fdbd20b72ce9beb32dcb05ff46bda87ddfb835</string>
+	<key>installer_item_location</key>
+	<string>apps/adobe/Adobe Acrobat XI Pro-11.0.0.pkg</string>
+	<key>installer_item_size</key>
+	<integer>596883</integer>
+	<key>minimum_os_version</key>
+	<string>10.6.8</string>
+	<key>name</key>
+	<string>Adobe Acrobat XI Pro</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>1072</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.11.viewer.browser.pkg.MUI</string>
+			<key>version</key>
+			<string>11.0.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>416</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.11.viewer.print_pdf_services.pkg.MUI</string>
+			<key>version</key>
+			<string>11.0.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1083792</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.11.viewer.app.pkg.MUI</string>
+			<key>version</key>
+			<string>11.0.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1216</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.11.viewer.print_automator.pkg.MUI</string>
+			<key>version</key>
+			<string>11.0.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>251000</integer>
+			<key>packageid</key>
+			<string>com.adobe.PDApp.AdobeApplicationManager.installer.pkg</string>
+			<key>version</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>0</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.11.viewer.preinstall.pkg.MUI</string>
+			<key>version</key>
+			<string>11.0.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>145972</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.11.viewer.appsupport.pkg.MUI</string>
+			<key>version</key>
+			<string>11.0.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>11.0.0</string>
+	<key>unattended_install</key>
+	<true/>
+</dict>
+</plist>

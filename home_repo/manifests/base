@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>included_manifests</key>
+	<array>
+	<string>munki</string>
+	</array>
+	<key>managed_installs</key>
+	<array>
+		<string>Adobe Flash Player</string>
+		<string>Firefox</string>
+		<string>Chrome</string>
+		<string>Universal Mailer Mail Plugin</string>
+		<string>Acrobat Update Supression</string>
+		<string>join.me</string>
+		<string>Silverlight</string>
+		<string>Flip4Mac WMV</string>
+		<string>hooks</string>
+	</array>
+	<key>managed_uninstalls</key>
+	<array>
+	</array>
+	<key>managed_updates</key>
+	<array>
+	</array>
+	<key>conditional_items</key>
+	<array>
+		<dict>
+			<key>condition</key>
+			<string>os_vers == "10.6.8"</string>
+			<key>managed_installs</key>
+			<array>
+				<string>JavaForMacOSX</string>
+			</array>
+		</dict>
+		<dict>
+			<key>condition</key>
+			<string>os_vers_minor >= 7</string>
+			<key>managed_installs</key>
+			<array>
+				<string>JavaForOSX</string>
+			</array>
+		</dict>
+	</array>
+	</dict>
+</plist>

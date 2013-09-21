@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Contains user tracking and apple software update suppression set as login and logout hooks.</string>
+	<key>display_name</key>
+	<string>hooks</string>
+	<key>installed_size</key>
+	<integer>3</integer>
+	<key>installer_item_hash</key>
+	<string>7eb46f34246806bfaa4d6c780b759554c83d3016de31cd8fd5ac7c206160a13f</string>
+	<key>installer_item_location</key>
+	<string>utils/hooks.dmg</string>
+	<key>installer_item_size</key>
+	<integer>20</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>hooks</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>3</integer>
+			<key>packageid</key>
+			<string>com.trmacs.pkg.hooks</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

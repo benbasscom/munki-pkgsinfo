@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Munki Tools core software</string>
+	<key>display_name</key>
+	<string>Software Update - Core</string>
+	<key>installed_size</key>
+	<integer>568</integer>
+	<key>installer_item_hash</key>
+	<string>ba2dfed5b92d1661a5e0722497771a1968dcf2cb5365931242d5725c30916849</string>
+	<key>installer_item_location</key>
+	<string>munki/munkitools_core-0.8.4.1770.0.dmg</string>
+	<key>installer_item_size</key>
+	<integer>136</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>munkitools_core</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>munkitools_core-0.8.4.1770.0.pkg</string>
+			<key>installed_size</key>
+			<integer>568</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.core</string>
+			<key>version</key>
+			<string>0.8.4.1770.0</string>
+		</dict>
+	</array>
+	<key>requires</key>
+	<array>
+		<string>munkitools_launchd</string>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.8.4.1770.0</string>
+</dict>
+</plist>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>Mail</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Makes all JPG's attachments</string>
+	<key>display_name</key>
+	<string>Universal Mailer Mail Plugin</string>
+	<key>installed_size</key>
+	<integer>872</integer>
+	<key>installer_item_hash</key>
+	<string>ae706d74062a5fbaca686ea17e390f2d771c459261569a46b15ccaf654195ba1</string>
+	<key>installer_item_location</key>
+	<string>utils/Universal Mailer Mail Plugin v1.5.2.pkg</string>
+	<key>installer_item_size</key>
+	<integer>331</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Universal Mailer Mail Plugin</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>872</integer>
+			<key>packageid</key>
+			<string>it.noware.universalMailerMailPlugin.UniversalMailer.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.5.2</string>
+</dict>
+</plist>
