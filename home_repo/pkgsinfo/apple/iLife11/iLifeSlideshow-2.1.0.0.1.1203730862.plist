@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>iLifeSlideshow_v2</string>
+	<key>installed_size</key>
+	<integer>123790</integer>
+	<key>installer_item_hash</key>
+	<string>2400f439fb9416268439858e1074aa7e137ea6772adc4ec8ddb2de2695227a6c</string>
+	<key>installer_item_location</key>
+	<string>apple/iLife11/iLifeSlideshow_v2-2.1.0.0.1.1203730862.pkg</string>
+	<key>installer_item_size</key>
+	<integer>114017</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>iLifeSlideshow</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>123790</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.iLifeSlideshow_v2</string>
+			<key>version</key>
+			<string>2.1.0.0.1.1203730862</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.1.0.0.1.1203730862</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>update_for</key>
+	<array>
+		<string>iLife 11</string>
+	</array>
+</dict>
+</plist>

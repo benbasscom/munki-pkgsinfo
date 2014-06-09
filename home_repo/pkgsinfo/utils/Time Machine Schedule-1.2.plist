@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Time Machine scheduling for Ben.</string>
+	<key>display_name</key>
+	<string>Time Machine Schedule</string>
+	<key>installed_size</key>
+	<integer>2</integer>
+	<key>installer_item_hash</key>
+	<string>ad510a3202e41f8a98ff56599eb4e3861c9a4f6a3338bc8efa248b5717109c16</string>
+	<key>installer_item_location</key>
+	<string>utils/Time Machine Schedule-1.2.pkg</string>
+	<key>installer_item_size</key>
+	<integer>3</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.8</string>
+	<key>name</key>
+	<string>Time Machine Schedule</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>2</integer>
+			<key>packageid</key>
+			<string>com.trmacs.TimeMachineSchedule</string>
+			<key>version</key>
+			<string>1.2</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.2</string>
+</dict>
+</plist>

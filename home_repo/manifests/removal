@@ -4,16 +4,14 @@
 <dict>
 	<key>catalogs</key>
 	<array>
-		<string>all</string>
+		<string>testing</string>
 	</array>
 	<key>included_manifests</key>
 	<array>
 	</array>
 	<key>managed_installs</key>
 	<array>
-		<string>ben-RepoSettings</string>
-		<string>Adobe Flash Player</string>
-		<string>Office2011_sp2</string>
+		<string>Munki Removal</string>
 	</array>
 	<key>managed_uninstalls</key>
 	<array>

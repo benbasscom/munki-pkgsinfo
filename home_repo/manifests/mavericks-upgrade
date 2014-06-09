@@ -4,16 +4,18 @@
 <dict>
 	<key>catalogs</key>
 	<array>
-		<string>all</string>
+		<string>mavericks</string>
 	</array>
 	<key>included_manifests</key>
 	<array>
 	</array>
 	<key>managed_installs</key>
 	<array>
-		<string>ben-RepoSettings</string>
-		<string>Adobe Flash Player</string>
-		<string>Office2011_sp2</string>
+		<string>munkitools_launchd</string>
+		<string>munkitools_core</string>
+		<string>munkitools_app</string>
+		<string>munkitools_admin</string>
+		<string>Inventory</string>		
 	</array>
 	<key>managed_uninstalls</key>
 	<array>
@@ -24,5 +26,9 @@
 	<key>conditional_items</key>
 	<array>
 	</array>
-	</dict>
+	<key>optional_installs</key>
+	<array>
+		<string>Install_Mavericks</string>
+	</array>
+</dict>
 </plist>

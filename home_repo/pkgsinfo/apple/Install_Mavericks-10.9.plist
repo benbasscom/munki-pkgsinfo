@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestartAction</key>
+	<string>RequireRestart</string>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>mavericks</string>
+	</array>
+	<key>description</key>
+	<string>Mavericks installer.  Installs munki 0.9.2.1846, Disables the Setup Assistant and sets the computer into munki bootstrap mode.</string>
+	<key>display_name</key>
+	<string>OS X Mavericks</string>
+	<key>installed_size</key>
+	<integer>8388608</integer>
+	<key>installer_item_hash</key>
+	<string>55aee81d5c145e7be1fcee0d20ef61a789ac6268b7f306d646cd1e2c4fdd9c6a</string>
+	<key>installer_item_location</key>
+	<string>apple/InstallOSX_10.9_13A603_custom-10.9.dmg</string>
+	<key>installer_item_size</key>
+	<integer>5155273</integer>
+	<key>minimum_os_version</key>
+	<string>10.6.6</string>
+	<key>name</key>
+	<string>Install_Mavericks</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>InstallOSX_10.9_13A603_custom.pkg</string>
+			<key>installed_size</key>
+			<integer>8388608</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.installosx.pkg</string>
+			<key>version</key>
+			<string>10.9</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>10.9</string>
+</dict>
+</plist>

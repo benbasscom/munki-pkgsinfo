@@ -9,25 +9,23 @@
 	</array>
 	<key>included_manifests</key>
 	<array>
-	<string>munki</string>
+		<string>munki</string>
 	</array>
 	<key>managed_installs</key>
 	<array>
 		<string>Adobe Flash Player</string>
 		<string>Firefox</string>
 		<string>Chrome</string>
-		<string>Universal Mailer Mail Plugin</string>
-		<string>Acrobat Update Supression</string>
 		<string>join.me</string>
 		<string>Silverlight</string>
 		<string>Flip4Mac WMV</string>
 		<string>hooks</string>
 		<string>Office2011_sp2</string>
-		<string>Adobe Reader XI</string>
 		<string>ben-RepoSettings</string>
 		<string>VLC media player</string>
-		<string>Thunderbird</string>
-		</array>
+		<string>CS6DesignandWebPremium</string>
+		<string>TR-OutReach</string>
+	</array>
 	<key>managed_uninstalls</key>
 	<array>
 	</array>
@@ -38,30 +36,12 @@
 	<array>
 		<dict>
 			<key>condition</key>
-			<string>os_vers == "10.6.8"</string>
-			<key>managed_installs</key>
-			<array>
-				<string>JavaForMacOSX</string>
-			</array>
-		</dict>
-		<dict>
-			<key>condition</key>
 			<string>os_vers_minor >= 7</string>
 			<key>managed_installs</key>
 			<array>
 				<string>JavaForOSX</string>
 			</array>
 		</dict>
-		<dict>
-			<key>condition</key>
-			<string>serial_number == "C02FT15KDF8Y"</string>
-			<key>managed_installs</key>
-			<array>
-				<string>Adobe Acrobat XI Pro</string>
-				<string>CS6DesignandWebPremium</string>
-				<string>Time Machine Schedule</string>
-			</array>
-		</dict>
-</array>
-	</dict>
+		</array>
+</dict>
 </plist>

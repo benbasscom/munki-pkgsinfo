@@ -9,7 +9,7 @@
 	</array>
 	<key>included_manifests</key>
 	<array>
-	<string>munki</string>
+		<string>munki</string>
 	</array>
 	<key>managed_installs</key>
 	<array>
@@ -26,7 +26,11 @@
 		<string>Adobe Reader XI</string>
 		<string>ben-RepoSettings</string>
 		<string>VLC media player</string>
-		<string>Thunderbird</string>
+		<string>iLife 11</string>
+		<string>ClamXav</string>
+		<string>Adobe Acrobat XI Pro</string>
+		<string>CS6DesignandWebPremium</string>
+		<string>ApertureTrial</string>
 		</array>
 	<key>managed_uninstalls</key>
 	<array>
@@ -52,16 +56,9 @@
 				<string>JavaForOSX</string>
 			</array>
 		</dict>
-		<dict>
-			<key>condition</key>
-			<string>serial_number == "C02FT15KDF8Y"</string>
-			<key>managed_installs</key>
-			<array>
-				<string>Adobe Acrobat XI Pro</string>
-				<string>CS6DesignandWebPremium</string>
-				<string>Time Machine Schedule</string>
-			</array>
-		</dict>
-</array>
+	</array>
+	<key>optional_installs</key>
+	<array>
+	</array>
 	</dict>
 </plist>

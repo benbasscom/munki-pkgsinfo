@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>iLife ’11</string>
+	<key>installed_size</key>
+	<integer>4121484</integer>
+	<key>installer_item_hash</key>
+	<string>f3633a7c9937d4004aa98bb654c956de33d4265ac5be2dabfac8c8dd4161d881</string>
+	<key>installer_item_location</key>
+	<string>apple/iLife11/iLife 11 Install-11.1.1.1203730862.dmg</string>
+	<key>installer_item_size</key>
+	<integer>3050750</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>iLife 11</string>
+	<key>package_path</key>
+	<string>Installer/Packages/iLife.pkg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iPhoto</string>
+			<key>CFBundleName</key>
+			<string>iPhoto</string>
+			<key>CFBundleShortVersionString</key>
+			<string>9.0</string>
+			<key>path</key>
+			<string>/Applications/iPhoto.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.garageband</string>
+			<key>CFBundleName</key>
+			<string>GarageBand</string>
+			<key>CFBundleShortVersionString</key>
+			<string>6.0</string>
+			<key>path</key>
+			<string>/Applications/GarageBand.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iMovieApp</string>
+			<key>CFBundleName</key>
+			<string>iMovie</string>
+			<key>CFBundleShortVersionString</key>
+			<string>9.0</string>
+			<key>path</key>
+			<string>/Applications/iMovie.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>11.1.1.1203730862</string>
+	<key>preinstall_script</key>
+	<string>#!/bin/sh
+rm -rf /Applications/iPhoto.app
+rm -rf /Applications/iMovie.app
+rm -rf /Applications/GarageBand.app
+exit 0
+	</string>
+	<key>unattended_install</key>
+	<true/>
+</dict>
+</plist>

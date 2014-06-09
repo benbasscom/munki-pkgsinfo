@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>benbass</string>
+		<key>creation_date</key>
+		<date>2014-06-04T22:49:17Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.3</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Adobe Flash Player</string>
+	<key>installed_size</key>
+	<integer>16124</integer>
+	<key>installer_item_hash</key>
+	<string>017acec0e60db0b1fb7989fc3816b36f6532e201913f7f4462a4edcabfa55df5</string>
+	<key>installer_item_location</key>
+	<string>apps/adobe/install_flash_player_13_osx_pkg-13.0.0.214.dmg</string>
+	<key>installer_item_size</key>
+	<integer>15106</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Adobe Flash Player</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>16124</integer>
+			<key>packageid</key>
+			<string>com.adobe.pkg.FlashPlayer</string>
+			<key>version</key>
+			<string>13.0.0.214</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>13.0.0.214</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+
+mkdir -p -m 775 "/Library/Application Support/Macromedia"
+echo "AutoUpdateDisable=1" > "/Library/Application Support/Macromedia/mms.cfg"
+chown root:admin "/Library/Application Support/Macromedia/mms.cfg"
+chmod 664 "/Library/Application Support/Macromedia/mms.cfg"
+
+exit 0
+	</string>
+</dict>
+</plist>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>benbass</string>
+		<key>creation_date</key>
+		<date>2014-04-16T16:36:52Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Java 7 Update 55</string>
+	<key>installed_size</key>
+	<integer>145180</integer>
+	<key>installer_item_hash</key>
+	<string>189f2f1216d70de42accbf9c928c9ea8ba7aa37b1c08e1404e5cc60aefb054bd</string>
+	<key>installer_item_location</key>
+	<string>oracle/jre-7u55-macosx-x64.dmg</string>
+	<key>installer_item_size</key>
+	<integer>49630</integer>
+	<key>minimum_os_version</key>
+	<string>10.7.3</string>
+	<key>name</key>
+	<string>Java 7 Update</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>145180</integer>
+			<key>packageid</key>
+			<string>com.oracle.jre</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>uninstall_script</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>update_for</key>
+	<array>
+		<string>JavaForOSX</string>
+	</array>
+	<key>version</key>
+	<string>1.7.0.55</string>
+	<key>installcheck_script</key>
+	<string>#!/bin/bash
+
+if [ ! -e /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin ] ; then
+	exit 0
+fi
+
+VERSION=`defaults read /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Info CFBundleVersion | cut -d. -f1`
+VERSION2=`defaults read /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Info CFBundleVersion | cut -d. -f1,2`
+VERSION3=`defaults read /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Info CFBundleVersion | cut -d. -f3`
+
+if [ $VERSION -ge 14 ] ; then
+	exit 0
+fi
+
+RESULT=`echo "$VERSION2 &lt; 1.7" | bc`
+if [ $RESULT -eq 1 ] ; then
+	exit 0
+fi
+
+RESULT=`echo "$VERSION2 == 1.7" | bc`
+if [ $RESULT -eq 1 ] ; then
+	echo "version 1.7"
+	if [ $VERSION3 -lt 55 ]; then
+		exit 0
+	fi
+fi
+exit 1
+</string>
+	<key>postinstall_script</key> 
+	<string>#!/bin/sh 
+
+defaults write /Library/Preferences/com.oracle.java.Java-Updater JavaAutoUpdateEnabled -bool false
+
+exit 0
+</string>
+	<key>uninstall_script</key> 
+	<string>#!/bin/sh 
+rm -rf /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+ln -sf /System/Library/Java/Support/Deploy.bundle/Contents/Resources/JavaPlugin2_NPAPI.plugin /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin 
+ln -sf /System/Library/Frameworks/JavaVM.framework/Commands/javaws /usr/bin/javaws
+
+exit 0</string>
+</dict>
+</plist>

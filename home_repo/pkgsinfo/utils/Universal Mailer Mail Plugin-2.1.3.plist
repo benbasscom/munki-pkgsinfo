@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>benbass</string>
+		<key>creation_date</key>
+		<date>2014-06-04T23:28:46Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.3</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>Mail</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Makes attachments in line and happier.</string>
+	<key>display_name</key>
+	<string>UniversalMailer 2</string>
+	<key>installed_size</key>
+	<integer>742</integer>
+	<key>installer_item_hash</key>
+	<string>f19ce0af86858f4c1130b94a552b930bc159e530a70cf1c033ec09b28b565b0f</string>
+	<key>installer_item_location</key>
+	<string>utils/UniversalMailer 2-2.1.3.pkg</string>
+	<key>installer_item_size</key>
+	<integer>318</integer>
+	<key>minimum_os_version</key>
+	<string>10.9.0</string>
+	<key>name</key>
+	<string>Universal Mailer Mail Plugin</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>742</integer>
+			<key>packageid</key>
+			<string>it.noware.universalmailer.pkg</string>
+			<key>version</key>
+			<string>0</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.1.3</string>
+</dict>
+</plist>

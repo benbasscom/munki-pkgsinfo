@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>iWeb_304</string>
+	<key>installed_size</key>
+	<integer>328062</integer>
+	<key>installer_item_hash</key>
+	<string>603fd5445acfca84927a1e6340607dde098e4d74bb2762a03e2ce710f9f4b3bb</string>
+	<key>installer_item_location</key>
+	<string>apple/iLife11/iWeb_304-3.0.4.0.1.1203730862.pkg</string>
+	<key>installer_item_size</key>
+	<integer>182971</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>iWeb</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>328062</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.iWeb_304</string>
+			<key>version</key>
+			<string>3.0.4.0.1.1203730862</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.0.4.0.1.1203730862</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>update_for</key>
+	<array>
+		<string>iLife 11</string>
+	</array>
+</dict>
+</plist>

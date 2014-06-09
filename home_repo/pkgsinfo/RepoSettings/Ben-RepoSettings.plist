@@ -15,8 +15,26 @@
 	<key>installs</key>
 	<array>
 		<dict>
+			<key>md5checksum</key>
+			<string>1eb4bdfb6101ead0e535acda13cc0010</string>
 			<key>path</key>
-			<string>/usr/local/munki/.ben1</string>
+			<string>/usr/local/munki/preflight</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+		<dict>
+			<key>md5checksum</key>
+			<string>9531ae3fabc00b6d9c8356329cd35788</string>
+			<key>path</key>
+			<string>/usr/local/munki/postflight</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+		<dict>
+			<key>md5checksum</key>
+			<string>c14043e3f5fdee4bfc7b309eafd0bd01</string>
+			<key>path</key>
+			<string>/usr/local/munki/report_broken_client</string>
 			<key>type</key>
 			<string>file</string>
 		</dict>
@@ -26,11 +44,6 @@
 defaults write /Library/Preferences/ManagedInstalls Client Ben
 exit 0
 	</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/sh
-touch /usr/local/munki/.ben1
-exit 0
-</string>
     <key>minimum_os_version</key>
     <string>10.4.0</string>
     <key>name</key>
@@ -41,5 +54,10 @@ exit 0
     <string>1.0</string>
     <key>unattended_install</key>
     <true/>
+	<key>update_for</key>
+	<array>
+		<string>Inventory</string>
+	</array>
+
 </dict>
 </plist>

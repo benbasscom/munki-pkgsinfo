@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>benbass</string>
+		<key>creation_date</key>
+		<date>2014-06-05T00:20:49Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.3</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>installer_item_hash</key>
+	<string>688281ea2270f47d83a9b017812da919fa605e47cd9742ecd1c5cea000b6ced1</string>
+	<key>installer_item_location</key>
+	<string>apps/thunderbird configs.dmg</string>
+	<key>installer_item_size</key>
+	<integer>19</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>md5checksum</key>
+			<string>045aa8f94d6e50084570abced4bf1d3c</string>
+			<key>path</key>
+			<string>/Applications/Thunderbird.app/Contents/MacOS/defaults/pref/local-settings.js</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+		<dict>
+			<key>md5checksum</key>
+			<string>c4cd091df65b7b0ab9289d4ff3b4eb0c</string>
+			<key>path</key>
+			<string>/Applications/Thunderbird.app/Contents/MacOS/thunderbird_AA.cfg</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications/Thunderbird.app/Contents/MacOS/defaults/pref/</string>
+			<key>source_item</key>
+			<string>local-settings.js</string>
+		</dict>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications/Thunderbird.app/Contents/MacOS/</string>
+			<key>source_item</key>
+			<string>thunderbird_AA.cfg</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Thunderbird Configuration</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>update_for</key>
+	<array>
+		<string>Thunderbird</string>
+	</array>
+</dict>
+</plist>

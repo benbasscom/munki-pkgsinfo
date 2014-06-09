@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>iPhoto 9</string>
+	<key>installed_size</key>
+	<integer>935485</integer>
+	<key>installer_item_hash</key>
+	<string>537d8b6e5c2e6298056437c3cee13121d31dd9be28fbe1a375a215a25e873a59</string>
+	<key>installer_item_location</key>
+	<string>apple/iLife11/iPhoto9-9.0.1.1203730862.dmg</string>
+	<key>installer_item_size</key>
+	<integer>583581</integer>
+	<key>minimum_os_version</key>
+	<string>10.6.3</string>
+	<key>name</key>
+	<string>iPhoto</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>61457</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.ProAppRuntime</string>
+			<key>version</key>
+			<string>6.0.1.1194400900</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>24649</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.iPhotoLibraryUpgradeTool</string>
+			<key>version</key>
+			<string>1.0.1.1203730862</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>424</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.AppleIntermediateCodec</string>
+			<key>version</key>
+			<string>1.3.1.1.1249343429</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>390756</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.iPhotoContent</string>
+			<key>version</key>
+			<string>9.0.1.1203730862</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>458199</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.iPhoto</string>
+			<key>version</key>
+			<string>9.0.1.1203730862</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>9.0.1.1203730862</string>
+	<key>preinstall_script</key>
+	<string>#!/bin/sh
+rm -rf /Applications/iPhoto.app
+exit 0
+	</string>
+	<key>unattended_install</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>iPhoto9.1ContentUpdate</string>
+	<key>installed_size</key>
+	<integer>31505</integer>
+	<key>installer_item_hash</key>
+	<string>b3f8545044b35ad717e3cb4f2d23b006d529835bbf327562a8eb8b25413ee8ee</string>
+	<key>installer_item_location</key>
+	<string>apple/iLife11/iPhoto9.1ContentUpdate-9.1.0.0.1.1203730862.pkg</string>
+	<key>installer_item_size</key>
+	<integer>13820</integer>
+	<key>minimum_os_version</key>
+	<string>10.6.3</string>
+	<key>name</key>
+	<string>iPhoto_content_update1</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>31505</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.iPhoto9.1ContentUpdate</string>
+			<key>version</key>
+			<string>9.1.0.0.1.1203730862</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>9.1.0.0.1.1203730862</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>update_for</key>
+	<array>
+		<string>iLife 11</string>
+		<string>iPhoto</string>
+	</array>
+</dict>
+</plist>

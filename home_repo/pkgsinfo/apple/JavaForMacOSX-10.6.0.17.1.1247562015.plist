@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Java for Mac OS X 10.6 Update 17</string>
+	<key>installed_size</key>
+	<integer>77609</integer>
+	<key>installer_item_hash</key>
+	<string>a1ab36745862beabcc5ee3deaddff476a660d82c62f82f047ef1e2a383c82458</string>
+	<key>installer_item_location</key>
+	<string>apple/JavaForMacOSX10.6update17-10.6.0.17.1.1247562015.dmg</string>
+	<key>installer_item_size</key>
+	<integer>71203</integer>
+	<key>minimum_os_version</key>
+	<string>10.6.8</string>
+	<key>maximum_os_version</key>
+	<string>10.6.99</string>
+	<key>name</key>
+	<string>JavaForMacOSX</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>118038</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.JavaForMacOSX10.6</string>
+			<key>version</key>
+			<string>10.6.0.17.1.1247562015</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1362</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.JavaSecurity</string>
+			<key>version</key>
+			<string>1.0.0.0.1.1247562015</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>10.6.0.17.1.1247562015</string>
+</dict>
+</plist>

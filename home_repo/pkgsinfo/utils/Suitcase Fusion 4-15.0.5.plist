@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Suitcase Fusion 4</string>
+	<key>installed_size</key>
+	<integer>240512</integer>
+	<key>installer_item_hash</key>
+	<string>e91fa3ee9b190aafcb153b1f6ea28ec2819263c4709f1c6fc857a7bbe75e8576</string>
+	<key>installer_item_location</key>
+	<string>utils/Suitcase Fusion 4 v15.0.5.pkg</string>
+	<key>installer_item_size</key>
+	<integer>87191</integer>
+	<key>minimum_os_version</key>
+	<string>10.7.0</string>
+	<key>name</key>
+	<string>Suitcase Fusion 4</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>240512</integer>
+			<key>packageid</key>
+			<string>com.extensis.SuitcaseFusion4EN1505installer</string>
+			<key>version</key>
+			<string>15.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>15.0.5</string>
+	<key>unattended_install</key>
+	<true/>
+</dict>
+</plist>

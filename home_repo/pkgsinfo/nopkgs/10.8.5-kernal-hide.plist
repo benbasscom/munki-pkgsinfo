@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>autoremove</key>
+    <false/>
+    <key>catalogs</key>
+    <array>
+        <string>production</string>
+    </array>
+    <key>description</key>
+    <string>This no-pkg re-hides the Mach Kernel on 10.8.5 machines that have had the Supplemental Update installed. If the machine was unaffected, it does nothing.</string>
+    <key>display_name</key>
+    <string>Hide Mach Kernel</string>
+    <key>minimum_os_version</key>
+    <string>10.8.5</string>
+    <key>name</key>
+    <string>Hide Mach Kernel</string>
+    <key>installcheck_script</key>
+    <string>#!/bin/sh
+#!/bin/sh
+checkmkflag=`xattr -x /mach_kernel`
+
+if [ "$checkmkflag" != "com.apple.FinderInfo" ]
+then chflags hidden /mach_kernel
+else echo "mach kernel is already hidden"
+fi
+exit 0
+    </string>
+    <key>installable_condition</key>
+    <string>os_vers MATCHES '10.8.5'</string>
+    <key>installer_type</key>
+    <string>nopkg</string> 
+    <key>unattended_install</key>
+    <true/>
+    <key>uninstallable</key>
+    <true/>
+    <key>version</key>
+    <string>1.0</string>
+</dict>
+</plist>
